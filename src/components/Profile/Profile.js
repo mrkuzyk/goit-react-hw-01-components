@@ -1,35 +1,45 @@
+import PropTypes from 'prop-types';
 import s from './Profile.module.css';
 // console.log(user);
 
-export default function Profile({avatar, username, tag, location, statsFollowers, statsViews, statsLikes}) {
+export default function Profile({avatar = "https://cdn-icons-png.flaticon.com/512/2922/2922506.png", username, tag, location, statsFollowers, statsViews, statsLikes}) {
     return (
-        <div className="profile">
-            <div className="description">
+        <div className={s.profile}>
+            <div className={s.description}>
                 <img
-                    src={avatar ? avatar : "https://cdn-icons-png.flaticon.com/512/1077/1077012.png"}
+                    src={avatar}
                     alt="User avatar"
-                    className="avatar"
+                    className={s.avatar}
                 />
-                <p className="name">{username}</p>
-                <p className="tag">@{tag}</p>
-                <p className="location">{location}</p>
+                <p className={s.name}>{username}</p>
+                <p className={s.tag}>@{tag}</p>
+                <p className={s.location}>{location}</p>
             </div>
 
-        <ul className="stats">
-            <li>
-                <span className="label">Followers</span>
-                <span className="quantity">{statsFollowers}</span>
-            </li>
-            <li>
-                <span className="label">Views</span>
-                <span className="quantity">{statsViews}</span>
-            </li>
-            <li>
-                <span className="label">Likes</span>
-                <span className="quantity">{statsLikes}</span>
-            </li>
-        </ul>
-    </div>
-    )
-    
+            <ul className={s.stats}>
+                <li>
+                    <span className={s.label}>Followers</span>
+                    <span className={s.quantity}>{statsFollowers}</span>
+                </li>
+                <li>
+                    <span className={s.label}>Views</span>
+                    <span className={s.quantity}>{statsViews}</span>
+                </li>
+                <li>
+                    <span className={s.label}>Likes</span>
+                    <span className={s.quantity}>{statsLikes}</span>
+                </li>
+            </ul>
+        </div>
+    );
+};
+
+Profile.propTypes = {
+    avatar: PropTypes.string,
+    username: PropTypes.string,
+    tag: PropTypes.string,
+    location: PropTypes.string,
+    statsFollowers: PropTypes.number,
+    statsViews: PropTypes.number,
+    statsLikes: PropTypes.number
 }

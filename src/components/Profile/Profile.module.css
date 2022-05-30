@@ -1,3 +1,60 @@
-.profile{
-    background-color: bisque;
+.profile {
+    background-color: rgb(190, 201, 211);
+
+    text-align: center;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.description{
+    width: 300px;
+    display: block;
+
+    padding: 20px;
+    margin: auto;
+
+    border: 1px solid rgb(187, 188, 192);
+    background-color: white;
+}
+
+.avatar {
+    width: 200px;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.tag{
+    color: rgb(123, 131, 130);
+}
+
+.location{
+    color: rgb(71, 73, 73);
+}
+
+.stats{
+    width: 300px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    /* align-items: center; */
+
+    padding: 20px;
+    margin: auto;
+    
+    border: 1px solid rgba(120, 120, 120, 0.901);
+    background-color: rgb(235, 230, 240);
+}
+
+.label{
+display: block;
+flex-direction: column;
+color: rgb(47, 49, 49);
+}
+
+.quantity{
+    font-weight: 700;
 }
