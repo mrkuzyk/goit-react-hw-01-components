@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import s from './Profile.module.css';
-// console.log(user);
 
 export default function Profile({avatar = "https://cdn-icons-png.flaticon.com/512/2922/2922506.png", username, tag, location, statsFollowers, statsViews, statsLikes}) {
     return (

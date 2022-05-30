@@ -1,5 +1,6 @@
 import Profile from './Profile/Profile'
 import user from './Profile/user'
+import data from './Statistics/data'
 
 
 export const App = () => {
