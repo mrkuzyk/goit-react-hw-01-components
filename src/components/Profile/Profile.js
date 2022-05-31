@@ -34,11 +34,11 @@ export default function Profile({avatar = "https://cdn-icons-png.flaticon.com/51
 };
 
 Profile.propTypes = {
-    avatar: PropTypes.string,
-    username: PropTypes.string,
-    tag: PropTypes.string,
-    location: PropTypes.string,
-    statsFollowers: PropTypes.number,
-    statsViews: PropTypes.number,
-    statsLikes: PropTypes.number
+    avatar: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    statsFollowers: PropTypes.number.isRequired,
+    statsViews: PropTypes.number.isRequired,
+    statsLikes: PropTypes.number.isRequired
 }
