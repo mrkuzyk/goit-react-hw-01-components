@@ -1,19 +1,30 @@
 .statistics{
     text-align: center;
-    
+
+    margin: auto;
+
     padding-top: 20px;
     padding-bottom: 20px;
 
     background-color: rgb(225, 192, 192);
 }
 
+.div{
+    margin: auto;
+    width: fit-content;
+
+}
+
 .title{
     text-transform: uppercase;
 
-padding: 20px;
-margin: 0;
+    padding: 20px;
+    margin: 0;
 
     background-color: #fff;
+
+    border: 1px solid transparent;
+    border-radius: 5px 5px 0px 0px;
 }
 .statList{
     display: inline-flex;
@@ -25,10 +36,6 @@ margin: 0;
     background-color: rgb(243, 221, 113);
 }
 
-.statList h2:nth-child(n){
-    width: 100%;
-}
-
 .item{
     width: 75px;
     height: 75px;
@@ -38,8 +45,7 @@ margin: 0;
     align-items: center;
     flex-direction: column;
 
-
-    border: 1px solid rgba(120, 120, 120, 0.901);
+    border: 1px solid rgba(247, 245, 245, 0.901);
 }
 
 .label{
