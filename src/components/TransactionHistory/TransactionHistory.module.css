@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    justify-content: center;
+
+    padding-top: 20px;
+    padding-bottom: 50px;
+
+    background-color: rgb(230, 195, 227);
+}
+
+.transactionHistory{
+    text-align: center;
+
+    border-collapse: collapse;
+    border: 1px solid white
+}
+
+th{
+    font-weight: 400;
+    text-transform: uppercase;
+
+    padding: 15px;
+
+    background-color: rgb(101, 92, 182);
+    color: white;
+
+}
+
+tr:nth-child(odd){
+    background-color: aqua;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(233, 231, 113);
+}
+
+th, td{
+    border: 1px solid rgb(252, 252, 252)
+}
+
+td{
+    padding: 10px 50px;
+}
